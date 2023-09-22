@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B15D155-D087-42C0-AE10-0F861A61E964}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kres</RootNamespace>
+    <AssemblyName>kres</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ders.Designer.cs">
+      <DependentUpon>ders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duyuru.Designer.cs">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="etkinlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="etkinlik.Designer.cs">
+      <DependentUpon>etkinlik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kresDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kresDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muhasebe.Designer.cs">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yemek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yemek.Designer.cs">
+      <DependentUpon>yemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci.Designer.cs">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmen.Designer.cs">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinif.Designer.cs">
+      <DependentUpon>Sinif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veli.Designer.cs">
+      <DependentUpon>veli.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ders.resx">
+      <DependentUpon>ders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duyuru.resx">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="etkinlik.resx">
+      <DependentUpon>etkinlik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muhasebe.resx">
+      <DependentUpon>muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci.resx">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmen.resx">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sinif.resx">
+      <DependentUpon>Sinif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veli.resx">
+      <DependentUpon>veli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yemek.resx">
+      <DependentUpon>yemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="kresDataSet.xsc">
+      <DependentUpon>kresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kresDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kresDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kresDataSet.xss">
+      <DependentUpon>kresDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
